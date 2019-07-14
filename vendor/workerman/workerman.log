@@ -1,0 +1,190 @@
+2019-07-13 12:58:41 pid:1 Exception: You can't send(array) to client, you need to convert it to a string.  in C:\xampp\htdocs\websoket\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 C:\xampp\htdocs\websoket\websoket.php(15): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"msg":"lol","n...')
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"msg":"lol","n...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 C:\xampp\htdocs\websoket\websoket.php(62): Workerman\Worker::runAll()
+#11 {main}
+2019-07-13 12:58:41 pid:1 Worker process terminated
+2019-07-14 10:08:50 pid:1 Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\websoket\websoket.php:129
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?user=null...')
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Protocols\Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?user=null...')
+#2 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Protocols\Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?user=null...', Object(Workerman\Connection\TcpConnection))
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?user=null...', Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 C:\xampp\htdocs\websoket\websoket.php(171): Workerman\Worker::runAll()
+#11 {main}
+2019-07-14 10:08:50 pid:1 Worker process terminated
+2019-07-14 10:09:23 pid:1 Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\websoket\websoket.php:129
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?user=null...')
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Protocols\Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?user=null...')
+#2 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Protocols\Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?user=null...', Object(Workerman\Connection\TcpConnection))
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?user=null...', Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 C:\xampp\htdocs\websoket\websoket.php(171): Workerman\Worker::runAll()
+#11 {main}
+2019-07-14 10:09:23 pid:1 Worker process terminated
+2019-07-14 10:24:54 pid:1 Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\websoket\websoket.php:129
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?user=test...')
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Protocols\Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?user=test...')
+#2 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Protocols\Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?user=test...', Object(Workerman\Connection\TcpConnection))
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?user=test...', Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #67)
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 C:\xampp\htdocs\websoket\websoket.php(173): Workerman\Worker::runAll()
+#11 {main}
+2019-07-14 10:24:54 pid:1 Worker process terminated
+2019-07-14 12:53:49 pid:1 Error: Call to a member function send() on array in C:\xampp\htdocs\websoket\websoket.php:72
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #138)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(199): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 12:53:49 pid:1 Worker process terminated
+2019-07-14 13:01:06 pid:1 Error: Call to a member function send() on array in C:\xampp\htdocs\websoket\websoket.php:39
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"msg":"2","nam...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #53)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(189): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 13:01:06 pid:1 Worker process terminated
+2019-07-14 13:25:31 pid:1 Error: Call to a member function send() on null in C:\xampp\htdocs\websoket\websoket.php:34
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #53)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(185): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 13:25:31 pid:1 Worker process terminated
+2019-07-14 14:07:52 pid:1 Error: Cannot use object of type DateTime as array in C:\xampp\htdocs\websoket\websoket.php:57
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #42)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(187): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 14:07:52 pid:1 Worker process terminated
+2019-07-14 14:09:51 pid:1 Error: Cannot use object of type DateTime as array in C:\xampp\htdocs\websoket\websoket.php:57
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(187): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 14:09:51 pid:1 Worker process terminated
+2019-07-14 14:12:24 pid:1 Error: Cannot use object of type DateTime as array in C:\xampp\htdocs\websoket\websoket.php:57
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(191): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 14:12:24 pid:1 Worker process terminated
+2019-07-14 14:14:40 pid:1 Error: Cannot use object of type DateTime as array in C:\xampp\htdocs\websoket\websoket.php:57
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(186): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 14:14:40 pid:1 Worker process terminated
+2019-07-14 14:19:59 pid:1 Error: Cannot use object of type DateTime as array in C:\xampp\htdocs\websoket\websoket.php:57
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(191): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 14:19:59 pid:1 Worker process terminated
+2019-07-14 14:35:26 pid:1 Error: Call to a member function send() on null in C:\xampp\htdocs\websoket\websoket.php:33
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(186): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 14:35:26 pid:1 Worker process terminated
+2019-07-14 14:37:16 pid:1 Error: Call to a member function send() on null in C:\xampp\htdocs\websoket\websoket.php:38
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#1 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"nickname":"te...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 C:\xampp\htdocs\websoket\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 C:\xampp\htdocs\websoket\websoket.php(191): Workerman\Worker::runAll()
+#9 {main}
+2019-07-14 14:37:16 pid:1 Worker process terminated
